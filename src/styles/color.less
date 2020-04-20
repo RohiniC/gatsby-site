@@ -1,0 +1,75 @@
+// Brand Colors
+
+@color-denim-blue: #1255b3;
+@color-dark-cerulean-blue: #0e438c;
+@color-royal-blue: #0c6df5;
+@color-bunting-blue: #2e3b4d;
+@color-alice-blue: #e6f0ff;
+@card-hover-color: #366AB3;
+// Supportive Colors
+
+//Teal
+
+@color-dark-turquoise: #00d2e6;
+@color-iris: #00afbf;
+@color-baby-blue: #62e9f5;
+@color-dark-slate-grey: #2e4a4d;
+@color-light-cyan: #e6fdff;
+
+//Green
+
+@color-jade-green: #00b368;
+@color-shamrock-green: #008c52;
+@color-shamrock-green-light: #2bd991;
+@color-te-papa-green: #2e4d40;
+@color-cosmic-latte-green: #e1faef;
+
+//yellow
+
+@color-saffron-yellow: #f2c230;
+@color-buddha-gold-yellow: #cc8f14;
+@color-salomie-yellow: #ffd580;
+@color-onion-yellow: #4d452e;
+@color-floral-white-yellow: #fff7e6;
+
+// Red
+
+@color-cinnabar-red: #e64545;
+@color-mahogany-red: #bf3030;
+@color-monalisa-red: #ff9999;
+@color-espresso-red: #4d2e2e;
+@color-misty-rose: #ffebeb;
+
+// Violet
+
+@color-deep-liliac-violet: #aa47b3;
+@color-vivid-violet: #842a8c;
+@color-medium-orchid-violet: #d06cd9;
+@color-hot-purple: #4a2e4d;
+@color-magnolia-violet: #fef0ff;
+
+// Greys & Silver
+
+@color-blue-charcoal: #292d33;
+@color-steel-grey: #42474f;
+@color-shuttle-grey: #5c626b;
+@color-storm-grey: #787e87;
+@color-grey-silver: #969ca3;
+@color-casper-silver: #b6babf;
+@color-athens-silver: #d7d8db;
+@color-solitude-silver: #f0f2f5;
+
+@color-white: #FFFFFF;
+@color-black: #000000;
+
+@divider: #EBEEF1;
+// opacity mixin
+.opacity(@opacity: 0.6) {
+  @mfopacity: @opacity*100;
+  @fopacity: "alpha(opacity=@{mfopacity})";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{mfopacity})";
+  filter: ~"@{fopacity}";
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}

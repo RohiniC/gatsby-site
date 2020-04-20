@@ -1,0 +1,35 @@
+.heading(
+  @fontSize: 14px,
+  @lineHeight: 1,
+  @letterSpacing: normal,
+
+  @textVariant: capitalize,
+  @marginBottom: 10px
+) {
+  font-size: @fontSize;
+  line-height: @lineHeight;
+  letter-spacing: @letterSpacing;
+  text-transform: @textVariant;
+  font-weight: 600;
+  color: @color-black;
+  margin-bottom:  @marginBottom;
+}
+//body text
+.text(@fontSize: 14px, @lineHeight: 1) {
+  font-size: @fontSize;
+  line-height: @lineHeight;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: @color-blue-charcoal;
+}
+// links
+.link {
+  .text(16px, 1.75);
+  color: @color-dark-cerulean-blue;
+}
+.link-hover {
+  color: @color-denim-blue;
+}
+.link-active {
+  color: @color-bunting-blue;
+}
